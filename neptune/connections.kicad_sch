@@ -1,6 +1,6 @@
 (kicad_sch (version 20230121) (generator eeschema)
 
-  (uuid 4c113322-dc61-43e4-8fc5-a726dfe98795)
+  (uuid 0de63162-1fc5-4c30-93a4-577072b83795)
 
   (paper "A4")
 
@@ -535,11 +535,11 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+3.3V" (at 0 3.556 0)
+      (property "Value" "+3V3" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -548,13 +548,13 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+3.3V_0_1"
+      (symbol "+3V3_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -580,7 +580,7 @@
           (fill (type none))
         )
       )
-      (symbol "+3.3V_1_1"
+      (symbol "+3V3_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
           (name "+3V3" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -1231,34 +1231,6 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 39.37 80.01 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 6e5ce7f2-2ca4-4c5a-a3aa-2391524f00f4)
-    (property "Reference" "#PWR041" (at 39.37 83.82 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 39.37 74.295 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 39.37 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 39.37 80.01 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c4160c05-c8e4-4096-af43-10b271360cc9))
-    (instances
-      (project "neptune"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/708c8a34-f258-4554-8b50-7818f1e46fec"
-          (reference "#PWR041") (unit 1)
-        )
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ecfbb819-cfce-4fa1-8e12-b36915786c58"
-          (reference "#PWR068") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 90.17 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 88062bca-1bf1-4583-8b59-5510f8860dcc)
@@ -1431,6 +1403,34 @@
         )
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ecfbb819-cfce-4fa1-8e12-b36915786c58"
           (reference "J4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 39.37 80.01 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e9d5a3e3-49ac-4b17-a964-95a5cd92a30e)
+    (property "Reference" "#PWR04" (at 39.37 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 39.37 76.2 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 39.37 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 39.37 80.01 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0a9c1ec0-730e-46d5-8076-9904c1d183a1))
+    (instances
+      (project "neptune"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/761c8e29-382a-475c-a37a-7201cc9cd0f5"
+          (reference "#PWR04") (unit 1)
+        )
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/ecfbb819-cfce-4fa1-8e12-b36915786c58"
+          (reference "#PWR045") (unit 1)
         )
       )
     )

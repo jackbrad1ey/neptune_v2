@@ -277,11 +277,11 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+3.3V" (at 0 3.556 0)
+      (property "Value" "+3V3" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -293,10 +293,10 @@
       (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+3.3V_0_1"
+      (symbol "+3V3_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -322,9 +322,9 @@
           (fill (type none))
         )
       )
-      (symbol "+3.3V_1_1"
+      (symbol "+3V3_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (name "+3V3" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -372,7 +372,7 @@
   )
 
   (junction (at 73.66 45.72) (diameter 0) (color 0 0 0 0)
-    (uuid 594218c3-5e0b-4db8-9aef-32cd34d610b0)
+    (uuid 9801b3f5-a353-4818-b6ca-eae23a626863)
   )
   (junction (at 73.66 53.34) (diameter 0) (color 0 0 0 0)
     (uuid 9c83924d-4d76-4b16-b76f-08b022411cf1)
@@ -408,7 +408,7 @@
     (stroke (width 0) (type default))
     (uuid 32f7c330-d0bf-43c5-91ac-8f73b1d4f3f0)
   )
-  (wire (pts (xy 73.66 45.72) (xy 67.31 45.72))
+  (wire (pts (xy 67.31 45.72) (xy 73.66 45.72))
     (stroke (width 0) (type default))
     (uuid 372b9f5a-418e-491d-8328-cce60a5d0b55)
   )
@@ -445,10 +445,6 @@
   (wire (pts (xy 59.69 82.55) (xy 62.23 82.55))
     (stroke (width 0) (type default))
     (uuid 6020fc8c-582a-4618-bd35-3739f318cff9)
-  )
-  (wire (pts (xy 73.66 45.72) (xy 80.01 45.72))
-    (stroke (width 0) (type default))
-    (uuid 6229a6c8-4520-421f-9834-918daabf6df1)
   )
   (wire (pts (xy 34.29 77.47) (xy 31.75 77.47))
     (stroke (width 0) (type default))
@@ -512,6 +508,10 @@
   (wire (pts (xy 114.3 52.07) (xy 116.84 52.07))
     (stroke (width 0) (type default))
     (uuid cc5bd69e-91d9-468c-97d3-f3d3e22ae209)
+  )
+  (wire (pts (xy 73.66 45.72) (xy 80.01 45.72))
+    (stroke (width 0) (type default))
+    (uuid d0a5ef9b-8c26-445d-80ac-e997597de488)
   )
   (wire (pts (xy 80.01 45.72) (xy 80.01 46.99))
     (stroke (width 0) (type default))
@@ -609,31 +609,6 @@
     (uuid ec311257-0c72-42cb-b8a6-b3c0ebf3e1f1)
   )
 
-  (symbol (lib_id "power:+3.3V") (at 46.99 57.15 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 08596388-dc7a-49cd-9cfa-ebc732446fdd)
-    (property "Reference" "#PWR06" (at 46.99 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 46.99 53.34 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 46.99 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 46.99 57.15 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0bffd568-74e2-4f83-8a0b-eebe1f49ea29))
-    (instances
-      (project "neptune"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b694d9b6-8e2a-4217-a81b-e156ec88b46a"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:C_Small") (at 80.01 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 094f7bb5-632d-46de-b0f8-38ccdb50ffda)
@@ -692,6 +667,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 127 46.99 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1908af80-0c33-47a7-a13a-9e35af3768b7)
+    (property "Reference" "#PWR04" (at 127 50.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 127 43.18 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 127 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 127 46.99 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0024eaaa-5411-45bb-a814-dbcf4ae7f984))
+    (instances
+      (project "neptune"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/761c8e29-382a-475c-a37a-7201cc9cd0f5"
+          (reference "#PWR04") (unit 1)
+        )
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b694d9b6-8e2a-4217-a81b-e156ec88b46a"
+          (reference "#PWR039") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 46.99 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e295ccf-d58f-4d56-9b3f-857eee3b562a)
@@ -712,31 +715,6 @@
       (project "neptune"
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b694d9b6-8e2a-4217-a81b-e156ec88b46a"
           (reference "#PWR037") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+3.3V") (at 127 46.99 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 29367c04-985e-4028-9145-8ccd4f3d38bd)
-    (property "Reference" "#PWR039" (at 127 50.8 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3.3V" (at 127 43.18 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 127 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 127 46.99 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fd179941-14f1-42e3-81e4-208e83371d23))
-    (instances
-      (project "neptune"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b694d9b6-8e2a-4217-a81b-e156ec88b46a"
-          (reference "#PWR039") (unit 1)
         )
       )
     )
@@ -883,6 +861,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 46.99 57.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9aee341d-ec1b-413d-92bf-2d05f30cec39)
+    (property "Reference" "#PWR04" (at 46.99 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 46.99 53.34 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 46.99 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 46.99 57.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid a092115e-9a2d-4a6f-98ed-0a4c4b177d3b))
+    (instances
+      (project "neptune"
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/761c8e29-382a-475c-a37a-7201cc9cd0f5"
+          (reference "#PWR04") (unit 1)
+        )
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b694d9b6-8e2a-4217-a81b-e156ec88b46a"
+          (reference "#PWR06") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "RF_Module:RFM95W-915S2") (at 46.99 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1a0b9c4-a8f4-4095-bda7-92722fe56435)
@@ -923,13 +929,13 @@
     )
   )
 
-  (symbol (lib_id "power:+3.3V") (at 73.66 45.72 0) (unit 1)
+  (symbol (lib_id "power:+3V3") (at 73.66 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid ab8d1838-727b-43cf-8b65-d226b1887365)
-    (property "Reference" "#PWR?" (at 73.66 49.53 0)
+    (uuid b0330d17-979e-4bf0-84b3-bd00264a7ed4)
+    (property "Reference" "#PWR04" (at 73.66 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3.3V" (at 73.66 40.64 0)
+    (property "Value" "+3V3" (at 73.66 41.91 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 73.66 45.72 0)
@@ -938,11 +944,11 @@
     (property "Datasheet" "" (at 73.66 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 19479a65-ca98-4e7f-a1a7-32def1476197))
+    (pin "1" (uuid 991fdc71-fafe-43ed-8ae8-fcfd0ec68b52))
     (instances
       (project "neptune"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/fd0daead-056b-49b0-b136-e76d44737a4c"
-          (reference "#PWR?") (unit 1)
+        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/761c8e29-382a-475c-a37a-7201cc9cd0f5"
+          (reference "#PWR04") (unit 1)
         )
         (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55/b694d9b6-8e2a-4217-a81b-e156ec88b46a"
           (reference "#PWR08") (unit 1)
