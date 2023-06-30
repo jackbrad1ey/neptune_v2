@@ -500,6 +500,14 @@
       {
         "netclass": "RF",
         "pattern": "Net-(J3-In)"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power/BATT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VCC"
       }
     ]
   },

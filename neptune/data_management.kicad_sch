@@ -851,7 +851,7 @@
     (property "Value" "Conn_Coaxial" (at 68.58 67.7164 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Coaxial:SMA_Amphenol_132291_Vertical" (at 66.04 64.77 0)
+    (property "Footprint" "Connector_Coaxial:U.FL_Molex_MCRF_73412-0110_Vertical" (at 66.04 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 66.04 64.77 0)
