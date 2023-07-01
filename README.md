@@ -7,6 +7,7 @@ Neptune is a flight computer designed for testing basic thrust vector control (T
 Neptune V2 aims to solve several issues identified in the first iteration, as well as improve upon the overall design. The noteable changes include:
 - Improved connectors
   - JST-GH connectors for the servo motors to improved security and ease of connection
+  - A more compact RF-antenna connector
 - Indicator LEDs to display when the board has been powered on
 - A more compact form factor
   - ~45% reduction in area
